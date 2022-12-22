@@ -40,7 +40,7 @@ function HeaderDesktop() {
                 <Image src={"marksManLogo.png"} w={"60px"} h={"40px"} />
                 <TextHeader name="League Stats" />
             </Flex>
-            <Flex gap={"35px"} data-aos="zoom-in" data-aos-duration="4000">
+            <Flex gap={"35px"} data-aos="zoom-in" data-aos-duration="3000">
                 <TextHeader name="Perfil" />
                 <TextHeader name="Análise de Campeões" />
                 <TextHeader name="Estátisticas" />

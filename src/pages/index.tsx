@@ -6,19 +6,21 @@ import {
     useBreakpointValue,
     Box,
     Image,
+    Container,
+    keyframes,
 } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
+
+import { useEffect, useRef, useState } from "react";
 import { HeaderDesktop } from "../components/Header/HeaderDesktop";
 import { Layout } from "../components/layout";
 import ButtonComponent from "../components/patterns/buttonComponent";
 import { getProductsByName } from "../hooks/useGetSummerByName";
 
-// import "aos/dist/aos.css";
-// import Aos from "aos";
-
 export default function leagueStats() {
     const [summonerName, setSummonerName] = useState<string>("");
     const [playerData, setPlayerData] = useState<any>(null);
+    const [isOpen, setOpen] = useState(false);
 
     async function searchForPlayer() {
         const summoner = await getProductsByName(summonerName);
@@ -33,6 +35,26 @@ export default function leagueStats() {
         lg: true,
         xl: true,
     });
+
+    const controls = useAnimation();
+
+    useEffect(() => {
+        !isOpen
+            ? controls.start({
+                  width: "350px",
+                  marginTop: "0px",
+                  height: "600px",
+                  opacity: 1,
+                  transition: { duration: 2 },
+              })
+            : controls.start({
+                  width: "92%",
+                  marginTop: "80px",
+                  height: "800px",
+                  opacity: 0.7,
+                  transition: { duration: 3 },
+              });
+    }, [isOpen]);
 
     // setTimeout(function () {
     //     Aos.init({
@@ -49,6 +71,25 @@ export default function leagueStats() {
             className={"Layout"}
         >
             <HeaderDesktop />
+            <Flex
+                h="full"
+                w={"full"}
+                display="flex"
+                alignItems="center"
+                justifyContent="flex-start"
+            >
+                <Box
+                    as={motion.div}
+                    ml={"70px"}
+                    width="50px"
+                    height="600px"
+                    borderRadius="25px"
+                    bg="white"
+                    initial="hidden"
+                    animate={controls}
+                    onClick={() => setOpen(!isOpen)}
+                />
+            </Flex>
             {/* <Flex data-aos="fade-up">
                 <Flex w={"100px"} h={"100px"} bg={"red"}>
                     aaaaaa
