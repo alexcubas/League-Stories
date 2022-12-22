@@ -41,7 +41,7 @@ function HeaderDesktop() {
                 <TextHeader name="League Stats" />
             </Flex>
             <Flex gap={"35px"} data-aos="zoom-in" data-aos-duration="4000">
-                <TextHeader name="Perfil" />
+                <TextHeader name="Perfil " />
                 <TextHeader name="Análise de Campeões" />
                 <TextHeader name="Estátisticas" />
                 <TextHeader name="Classificações" />
