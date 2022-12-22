@@ -1,0 +1,35 @@
+LEAGUE-EXP-V4
+
+- /lol/league-exp/v4/entries/{queue}/{tier}/{division}
+
+* Retorna varios perfis do determinado elo da queue escolhida
+
+LEAGUE-V4
+
+- /lol/league/v4/challengerleagues/by-queue/{queue}
+
+* Retorna os Challengers perfis
+
+- /lol/league/v4/grandmasterleagues/by-queue/{queue}
+
+* Retornar os grande-mesteres perfis
+
+- /lol/league/v4/masterleagues/by-queue/{queue}
+
+* Retornar os mesteres perfis
+
+- /lol/league/v4/entries/by-summoner/{encryptedSummonerId}
+
+* Utilizando o ID retorna infos do jogador como elo, rank, wins, loses
+
+LOL-STATUS-V4
+
+- /lol/status/v4/platform-data
+
+* Status do server
+
+SUMMONER-V4
+
+- /lol/summoner/v4/summoners/by-name/{summonerName}
+
+* Pega os dados do invocador pelo nome
