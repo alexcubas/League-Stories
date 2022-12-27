@@ -28,3 +28,40 @@ body[data-aos-duration="4000"] [data-aos],
 [data-aos][data-aos][data-aos-duration="4000"] {
     transition-duration: 4000ms;
 }
+
+audio::-webkit-media-controls-panel {
+    background-color: #56aeff;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #b1d4e0;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #b1d4e0;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: rgba(177, 212, 224, 0.7);
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: #fff;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #b1d4e0;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}

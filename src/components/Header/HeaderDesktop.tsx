@@ -31,7 +31,7 @@ function HeaderDesktop() {
                 opacity={"20%"}
             />
             <Flex
-                ml={"30px"}
+                ml={"70px"}
                 alignItems={"center"}
                 gap={"20px"}
                 data-aos="zoom-in"
