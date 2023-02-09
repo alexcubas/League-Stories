@@ -33,3 +33,18 @@ SUMMONER-V4
 - /lol/summoner/v4/summoners/by-name/{summonerName}
 
 * Pega os dados do invocador pelo nome
+
+
+MATCH-V5
+
+- /lol/match/v5/matches/by-puuid/{puuid}/ids
+
+* Retorna o historico de partidas baseado no puuid do jogador, o numero de partidas, o tipo de partida, encryptedSummonerId
+
+- /lol/match/v5/matches/{matchId}
+
+* Retorna o histórico completo da partida baseada pelo id que foi capturada pelo id do jogador
+
+- /lol/match/v5/matches/{matchId}/timeline
+
+* Retorna toda a timeLine da partida

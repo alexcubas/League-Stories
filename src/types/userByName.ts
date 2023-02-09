@@ -1,4 +1,4 @@
-export type userByName = {
+export interface IUserByName extends Object {
     id: string;
     accountId: string;
     puuid: string;
@@ -6,4 +6,4 @@ export type userByName = {
     profileIconId: number;
     revisionDate: number;
     summonerLevel: number;
-};
+}

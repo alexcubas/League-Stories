@@ -5,6 +5,7 @@ type textShadow = {
     mt?: string;
     fontSize?: string;
     textShadow?: string;
+    textAlign?: any;
 };
 
 export default function TextWithShadow({
@@ -12,13 +13,14 @@ export default function TextWithShadow({
     mt,
     fontSize,
     textShadow,
+    textAlign,
 }: textShadow) {
     return (
         <Text
             mt={mt}
             fontSize={fontSize ? fontSize : "35px"}
             textStyle={"JBold"}
-            textAlign={"center"}
+            textAlign={textAlign ? textAlign : "center"}
             textColor={"white"}
             textShadow={
                 textShadow

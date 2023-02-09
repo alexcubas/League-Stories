@@ -3,11 +3,21 @@ import { Input } from "@chakra-ui/react";
 type inputComponent = {
     text: string;
     setText: any;
+    func?: any;
 };
 
-export default function InputComponent({ text, setText }: inputComponent) {
+export default function InputComponent({
+    text,
+    setText,
+    func,
+}: inputComponent) {
     return (
         <Input
+            onKeyUp={(e) => {
+                if (e.key === "Enter") {
+                    func;
+                }
+            }}
             borderRightRadius={0}
             borderColor={"purple"}
             value={text}

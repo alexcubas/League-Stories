@@ -16,13 +16,17 @@ export const theme = extendTheme({
     },
 
     colors: {
-        pink: "#E4CAFF",
+        pink: "#EC2B92",
         blue: {
             "50": "#65DDFF",
             "100": "#68ffd3",
         },
         purple: "#682785",
         white: "#ffffff",
+        gray: {
+            "50": "#A0AEC0",
+            "100": "#2D3748",
+        },
     },
 
     fonts: {
